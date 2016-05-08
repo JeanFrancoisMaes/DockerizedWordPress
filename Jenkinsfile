@@ -3,7 +3,7 @@ node {
    stage 'Checkout'
 
    // Get some code from a GitHub repository
-   git url: 'https://github.com/JeanFrancoisMaes/javawebstart'
+   git url: 'https://github.com/JeanFrancoisMaes/DockerizedWordPress'
 
 stage 'docker compose'
 
