@@ -3,6 +3,5 @@ node {
    stage 'Checkout'
 
    // Get some code from a GitHub repository
-   git url: 'https://github.com/JeanFrancoisMaes/DockerizedWordPress'
-
+   sh'git clone https://github.com/JeanFrancoisMaes/DockerizedWordPress .'
 
