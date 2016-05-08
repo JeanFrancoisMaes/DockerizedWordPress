@@ -3,6 +3,12 @@ node {
    stage 'Checkout'
 
    // Get some code from a GitHub repository
-   sh'git clone https://github.com/JeanFrancoisMaes/DockerizedWordPress .'
-
+      git url: 'https://github.com/JeanFrancoisMaes/DockerizedWordPress'
+   
+   stage 'Docker Composing'
+     
+     sh'docker-compose up'
+     
+   stage 'cleaning workspace'
+   sh 'rm -rf *'
 }
