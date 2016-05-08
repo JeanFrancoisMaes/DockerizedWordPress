@@ -7,7 +7,7 @@ node {
    
    stage 'Docker Composing'
      
-     sh'docker-compose up'
+     sh'docker-compose up -d'
      
    stage 'cleaning workspace'
    sh 'rm -rf *'
